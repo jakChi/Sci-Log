@@ -1,22 +1,68 @@
-import { getAllPosts } from "@/lib/api";
+"use client";
+
 import { FaSearch } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { Post } from "@/interfaces/post";
+import Link from "next/link";
 
 export function SearchBar() {
+  const [query, setQuery] = useState<string>("");
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [results, setResults] = useState<Post[]>([]);
+
+  useEffect(() => {
+    fetch("/api/posts")
+      .then((response) => response.json())
+      .then((data: Post[]) => setPosts(data));
+  }, []);
+
+  useEffect(() => {
+    setResults(
+      posts.filter(
+        (post) =>
+          post.title.toLowerCase().includes(query.toLowerCase()) ||
+          post.excerpt.toLowerCase().includes(query.toLowerCase()) ||
+          post.author.name.toLowerCase().includes(query.toLowerCase())
+      )
+    );
+  }, [query, posts]);
+
   return (
-    <div className="flex items-center justify-center w-full my-5">
-      <div className="relative w-2/3">
+    <div className="flex items-center justify-center w-full my-5 relative">
+      <div className="relative w-full">
         <input
           type="text"
           placeholder="Search..."
-          className="w-full px-4 p-1 border rounded-3xl"
+          className={`w-full px-4 p-1 border rounded-3xl`}
           name="search"
           autoComplete="off"
           autoFocus
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+          }}
         />
         <button className="absolute right-5 top-0 bottom-0">
           <FaSearch />
         </button>
       </div>
+      {query && (
+        <div className="absolute top-10 z-10 w-full mt-2 p-2 rounded-b-3xl bg-gray-800/90 shadow-lg">
+          <ul className="max-h-96 overflow-y-auto">
+            {results.map((post) => (
+              <li
+                key={post.slug}
+                className="px-4 py-2  hover:bg-gray-300 rounded-3xl cursor-pointer"
+              >
+                <Link href={`/posts/${post.slug}`}>
+                  <h3 className="text-lg font-semibold">{post.title}</h3>
+                  <p className="text-sm text-gray-600">{post.excerpt}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
