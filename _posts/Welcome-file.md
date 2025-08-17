@@ -1,19 +1,15 @@
 ---
-
-
+title: “სატესტო ფეიჯი სტაკედიტორიდან”
+excerpt: “სტაკ ედიტორის სატესტო დოკი.”
+coverImage: “/assets/blog/hiv-research/cover.jpg”
+date: “2025-08-16T09:30:00.000Z”
+author:
+  name: Paula M. Cevaal
+  picture: “/assets/blog/authors/Paula.jpg”
+ogImage: 
+  url: “/assets/blog/hiv-research/cover.jpg”
 ---
 
-<hr>
-<p>title:  “სატესტო ფეიჯი სტაკედიტორიდან”<br>
-excerpt:  “სტაკ ედიტორის სატესტო დოკი.”<br>
-coverImage:  “/assets/blog/hiv-research/cover.jpg”<br>
-date:  “2025-08-16T09:30:00.000Z”<br>
-author:<br>
-name:  Paula M. Cevaal<br>
-picture:  “/assets/blog/authors/Paula.jpg”<br>
-ogImage:	<br>
-url:  “/assets/blog/hiv-research/cover.jpg”</p>
-<hr>
 <h1 id="welcome-to-stackedit">Welcome to StackEdit!</h1>
 <p>Hi! I’m your first Markdown file in <strong>StackEdit</strong>. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the <strong>file explorer</strong> on the left corner of the navigaasdtion bar.</p>
 <h1 id="files">Files</h1>
