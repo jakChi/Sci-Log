@@ -28,7 +28,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={"dark:bg-slate-900 dark:text-slate-400"}>
+      <body className={"bg-slate-950 text-slate-300"}>
         <Navbar />
         <NextIntlClientProvider locale={locale}>
           {children}

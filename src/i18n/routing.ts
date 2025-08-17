@@ -5,7 +5,7 @@ export const routing = defineRouting({
   locales: ['en', 'ka'],
  
   // Used when no locale matches
-  defaultLocale: 'en'
+  defaultLocale: 'ka'
 });
 
 // export const locales = ['en', 'ka'] as const;
