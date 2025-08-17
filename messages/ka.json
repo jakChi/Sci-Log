@@ -1,0 +1,26 @@
+{
+  "Navbar": {
+    "library": "ბიბლიოთეკა",
+    "contact": "კონტაქტი",
+    "signUp": "გამოწერა"
+  },
+  "HomePage": {
+    "Intro": {
+      "title": "Sci-Log",
+      "description": "მეცნიერების, ტექნოლოგიებისა და მომავლის ბლოგი.",
+      "searchPlaceholder": "ბლოგების ძებნა...",
+      "Categories": {
+        "biology": "ბიოლოგია",
+        "physics": "ფიზიკა",
+        "chemistry": "ქიმია",
+        "technology": "ტექნოლოგიები",
+        "medicine": "მედიცინა"
+      }
+    },
+    "SidePanel": {
+      "featuredPosts": "გამორჩეული ბლოგები",
+      "featuredAuthors": "გამორჩეული ავტორები"
+    },
+    "moreStories": "მეტი ისტორიები"
+  }
+}

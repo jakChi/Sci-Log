@@ -4,6 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { Post } from "@/interfaces/post";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export function SearchBar() {
   const [query, setQuery] = useState<string>("");
@@ -27,13 +28,15 @@ export function SearchBar() {
     );
   }, [query, posts]);
 
+  const t = useTranslations("HomePage.Intro");
+
   return (
     <div className="flex items-center justify-center w-full my-5 relative">
       <div className="relative w-full">
         <input
           type="text"
-          placeholder="Search..."
-          className={`w-full px-4 p-1 border rounded-3xl`}
+          placeholder={t("searchPlaceholder")}
+          className={`w-full px-4 p-1 border rounded-3xl outline-none focus:ring-1 focus-ring-gray-100 transition-colors`}
           name="search"
           autoComplete="off"
           autoFocus

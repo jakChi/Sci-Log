@@ -1,12 +1,11 @@
-import React from "react";
-import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
-import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
-import { SidePanel } from "./_components/side-panel";
+import { getAllPosts } from "../../../lib/api";
+import Container from "../_components/container";
+import { HeroPost } from "../_components/hero-post";
+import { Intro } from "../_components/intro";
+import { MoreStories } from "../_components/more-stories";
+import { SidePanel } from "../_components/side-panel";
 
-export default function Index() {
+export default function HomePage() {
   const allPosts = getAllPosts();
 
   const heroPost = allPosts[0]; // Assuming the first post is the hero post

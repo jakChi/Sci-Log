@@ -1,8 +1,11 @@
 import { Category } from "./category";
 import { categories } from "@/lib/categories";
 import { SearchBar } from "./search-bar";
+import { useTranslations } from "next-intl";
 
 export function Intro() {
+  const t = useTranslations("HomePage.Intro");
+
   return (
     <section
       id="intro"
@@ -10,11 +13,9 @@ export function Intro() {
     >
       <div id="logo-text" className="flex-col">
         <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-          Sci-Log
+          {t("title")}
         </h1>
-        <h4 className="text-lg mt-5 mb-5">
-          A blog about science, technology, and the future.
-        </h4>
+        <h4 className="text-lg mt-5 mb-5">{t("description")}</h4>
       </div>
       <div id="categories">
         <div className="text-lg text-center md:text-left">

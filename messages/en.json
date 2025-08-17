@@ -1,0 +1,26 @@
+{
+  "Navbar": {
+    "library": "Library",
+    "contact": "Contact",
+    "signUp": "Sign Up"
+  },
+  "HomePage": {
+    "Intro": {
+      "title": "Sci-Log",
+      "description": "A blog about science, technology, and the future.",
+      "searchPlaceholder": "Search posts...",
+      "Categories": {
+        "biology": "Biology",
+        "physics": "Physics",
+        "chemistry": "Chemistry",
+        "technology": "Technology",
+        "medicine": "Medicine"
+      }
+    },
+    "SidePanel": {
+      "featuredPosts": "Featured Posts",
+      "featuredAuthors": "Featured Authors"
+    },
+    "moreStories": "More Stories"
+  }
+}

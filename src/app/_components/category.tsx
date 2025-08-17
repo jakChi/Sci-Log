@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 type Props = {
   name: string;
@@ -7,12 +8,13 @@ type Props = {
 };
 
 export function Category({ name, color, icon }: Props) {
+  const t = useTranslations("HomePage.Intro.Categories");
   return (
     <span
       className={`inline-block ${color} text-gray-800 text-sm font-semibold px-3 py-1 rounded-full`}
     >
       <Link href={`/categories/${name}`} className={`hover:underline`}>
-        {name} {icon}
+        {t(name)} {icon}
       </Link>
     </span>
   );
