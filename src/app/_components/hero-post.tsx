@@ -1,7 +1,7 @@
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
-import { type Author } from "@/interfaces/author";
+import { type Author } from "@/src/interfaces/author";
 import Link from "next/link";
 
 type Props = {

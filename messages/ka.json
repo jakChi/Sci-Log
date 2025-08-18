@@ -1,4 +1,10 @@
 {
+  "Alert": {
+    "sourceCodeAvailable": "კოდის წყარო ხელმისაწვდომია",
+    "sourceLink": "GitHub-ზე",
+    "viewSource": "იხილეთ წყარო",
+    "previewMode": "თქვენ ამჟამად წინასწარი ვერსიის რეჟიმში ხართ."
+  },
   "Navbar": {
     "library": "ბიბლიოთეკა",
     "contact": "კონტაქტი",

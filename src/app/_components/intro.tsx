@@ -1,5 +1,5 @@
 import { Category } from "./category";
-import { categories } from "@/lib/categories";
+import { categories } from "@/src/lib/categories";
 import { SearchBar } from "./search-bar";
 import { useTranslations } from "next-intl";
 

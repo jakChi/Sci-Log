@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/Paula.jpg"
 ogImage:
   url: "/assets/blog/hiv-research/cover.jpg"
+tags: "medicine"
 ---
 
 # ახალი იმედი აივ-ის განკურნების გზაზე

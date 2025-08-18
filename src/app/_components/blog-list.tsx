@@ -1,4 +1,4 @@
-import type { Post } from "@/interfaces/post";
+import type { Post } from "@/src/interfaces/post";
 import { PostPreview } from "./post-preview";
 
 export function BlogList({ posts }: { posts: Post[] }) {

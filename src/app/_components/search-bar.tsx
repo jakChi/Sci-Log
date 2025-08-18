@@ -2,7 +2,7 @@
 
 import { FaSearch } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { Post } from "@/interfaces/post";
+import { Post } from "@/src/interfaces/post";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
@@ -50,12 +50,12 @@ export function SearchBar() {
         </button>
       </div>
       {query && (
-        <div className="absolute top-10 z-10 w-full mt-2 p-2 rounded-b-3xl bg-gray-800/90 shadow-lg">
+        <div className="absolute top-10 z-10 w-full mt-2 p-2 rounded-b-3xl bg-gray-900/90 shadow-lg">
           <ul className="max-h-96 overflow-y-auto">
             {results.map((post) => (
               <li
                 key={post.slug}
-                className="px-4 py-2  hover:bg-gray-300 rounded-3xl cursor-pointer"
+                className="px-4 py-2 my-2 hover:bg-gray-800 rounded-3xl cursor-pointer"
               >
                 <Link href={`/posts/${post.slug}`}>
                   <h3 className="text-lg font-semibold">{post.title}</h3>

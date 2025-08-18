@@ -1,4 +1,4 @@
-import { getAllPosts } from "../../../lib/api";
+import { getAllPosts } from "../../lib/api";
 import Container from "../_components/container";
 import { HeroPost } from "../_components/hero-post";
 import { Intro } from "../_components/intro";

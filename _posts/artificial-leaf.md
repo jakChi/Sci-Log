@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/david.jpeg"
 ogImage:
   url: "/assets/blog/artificial-leaf/cover.jpg"
+tags: "biology"
 ---
 
 # ხელოვნური ფოთოლი: მომავლის ენერგიის წყარო

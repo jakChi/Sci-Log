@@ -1,6 +1,7 @@
-import { getAllPosts } from "@/lib/api";
+import { getAllPosts } from "@/src/lib/api";
 import { MiniPostPreview } from "./mini-post-preview";
 import { useTranslations } from "next-intl";
+import Avatar from "./avatar";
 
 export function SidePanel() {
   const featuredPosts = getAllPosts().slice(0, 3); // Example: Get the first 5 posts for the side panel
@@ -22,10 +23,12 @@ export function SidePanel() {
         ))}
       </ul>
       <h2 className="text-xl font-bold mb-4">{t("featuredAuthors")}:</h2>
-      <ul className="flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0">
-        <li>Author 1</li>
-        <li>Author 2</li>
-        <li>Author 3</li>
+      <ul className="mx-5 flex md:flex-row ">
+        {featuredPosts.map((post) => (
+          <li key={post.slug} className="-mx-3">
+            <Avatar name={post.author.name} picture={post.author.picture} />
+          </li>
+        ))}
       </ul>
     </aside>
   );

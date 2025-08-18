@@ -13,7 +13,7 @@ export function Category({ name, color, icon }: Props) {
     <span
       className={`inline-block ${color} text-gray-800 text-sm font-semibold px-3 py-1 rounded-full`}
     >
-      <Link href={`/categories/${name}`} className={`hover:underline`}>
+      <Link href={`/posts/${name}`} className={`hover:underline`}>
         {t(name)} {icon}
       </Link>
     </span>

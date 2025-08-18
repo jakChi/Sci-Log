@@ -1,4 +1,10 @@
 {
+  "Alert": {
+    "sourceCodeAvailable": "The source code for this blog is",
+    "sourceLink": "available on GitHub",
+    "viewSource": "View Source",
+    "previewMode": "You are currently in preview mode."
+  },
   "Navbar": {
     "library": "Library",
     "contact": "Contact",

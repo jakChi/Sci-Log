@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
-import markdownToHtml from "@/lib/markdownToHtml";
-//import Alert from "@/app/_components/alert";
+import { getAllPosts, getPostBySlug } from "@/src/lib/api";
+import { CMS_NAME } from "@/src/lib/constants";
+import markdownToHtml from "@/src/lib/markdownToHtml";
 import Container from "@/src/app/_components/container";
 import Header from "@/src/app/_components/header";
 import { PostBody } from "@/src/app/_components/post-body";
 import { PostHeader } from "@/src/app/_components/post-header";
+import Alert from "@/src/app/_components/alert";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -21,7 +21,7 @@ export default async function Post(props: Params) {
 
   return (
     <main>
-      {/* <Alert preview={post.preview} /> */}
+      <Alert preview={post.preview} />
       <Container>
         <Header />
         <article className="mb-32">

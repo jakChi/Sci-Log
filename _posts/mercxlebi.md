@@ -8,6 +8,7 @@ author:
   picture: "/assets/blog/authors/ჯაკობა.jpg"
 ogImage:
   url: "/assets/blog/mercxlebi/cover.jpg"
+tags: "biology"
 ---
 
 # მოსალოდნელი წვიმის წინ ჩიტების დაბლა ფრენა: მეცნიერულად დასაბუთებული მოვლენა

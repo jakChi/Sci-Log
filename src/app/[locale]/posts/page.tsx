@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { BlogList } from "../../_components/blog-list";
-import { Post } from "@/interfaces/post";
+import { Post } from "@/src/interfaces/post";
+import Header from "../../_components/header";
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<Post[]>([]);
@@ -15,7 +16,8 @@ export default function BlogPage() {
   }, []);
 
   return (
-    <main>
+    <main className="container w-[90%] mx-auto px-4 py-8">
+      <Header />
       <BlogList posts={posts} />
     </main>
   );
