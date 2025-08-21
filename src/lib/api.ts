@@ -2,6 +2,7 @@ import { Post } from "@/src/interfaces/post";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import path  from "path";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
@@ -16,10 +17,10 @@ export function getPostSlugs() {
 }
 
 export function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
+  const realSlug = slug.replace(/\.md$/, ""); // remove the .md extension from the slug
+  const fullPath = path.join(postsDirectory, `${realSlug}.md`); // construct the full path to the markdown file
+  const fileContents = fs.readFileSync(fullPath, "utf8"); // read the markdown file as a string
+  const { data, content } = matter(fileContents); // parse the markdown file using gray-matter
 
   return { ...data, slug: realSlug, content } as Post;
 }

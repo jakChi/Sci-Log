@@ -19,10 +19,10 @@ export function LanguageSwitcher() {
         <Link
           key={routing.locales.indexOf(l) + 1}
           href={`/${l}${strip(pathname)}`}
-          className={`text-sm font-semibold bg:transparent hover:bg-neutral-200 hover:text-neutral-800  p-1 ${
+          className={`text-sm font-semibold bg:transparent p-[2px]   ${
             pathname.startsWith(`/${l}`)
-              ? "bg-neutral-200 text-neutral-800"
-              : null
+              ? "bg-neutral-800 dark:bg-neutral-100 text-neutral-100 dark:text-neutral-800"
+              : "hover:bg-neutral-800 hover:text-neutral-100"
           }`}
         >
           {l}

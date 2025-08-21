@@ -23,29 +23,34 @@ export function HeroPost({
   slug,
 }: Props) {
   return (
-    <section id="hero-post" className="w-2/3 mx-5 rounded-3xl">
-      <div id="cover-image" className="relative">
-        <div className="absolute top-0 left-0 right-0 p-4 flex items-center">
+    <section id="hero-post" className="md:w-2/3 mx-5 rounded-3xl">
+      <div
+        id="cover-image"
+        className="relative rounded-lg bg-neutral-200 dark:bg-neutral-800"
+      >
+        <div className="md:absolute top-0 left-0 right-0 p-2 md:p-4 flex items-center">
           <Avatar name={author.name} picture={author.picture} />
           <AuthorName name={author.name} size="lg" />
         </div>
         <CoverImage title={title} src={coverImage} slug={slug} />
-        <div className="flex flex-col absolute bottom-0 left-0 right-0 bg-[var(--color-background)] text-[var(--color-foreground)] opacity-90 p-4">
+        <div className="flex flex-col absolute bottom-0 left-0 right-0 bg-[var(--color-background)] text-[var(--color-foreground)] opacity-80 p-2 md:p-4">
           <h3
             id="hero-post-title"
-            className="mb-4 text-xl lg:text-3xl leading-tight"
+            className="md:mb-4 text-sm md:text-4xl font-semibold leading-tight"
           >
             <Link href={`/posts/${slug}`} className="hover:underline">
               {title}
             </Link>
           </h3>
           <div>
-            <div id="hero-post-date" className="mb-4 md:mb-0 text-lg">
+            <div id="hero-post-date" className="md:mb-4 text-[10px] md:text-lg">
               <DateFormatter dateString={date} />
             </div>
           </div>
-          <div id="hero-post-excerpt-author" className="mt-4 md:mt-0">
-            <p className="text-md leading-relaxed mb-4">{excerpt}</p>
+          <div id="hero-post-excerpt" className="md:mt-4">
+            <p className="text-[12px] md:text-lg leading-tight md:leading-relaxed">
+              {excerpt}
+            </p>
           </div>
         </div>
       </div>

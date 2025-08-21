@@ -48,7 +48,6 @@ export function Footer() {
                 alt={t("editors.barelyhuman")}
               />
             </Link>
-
             <Link href={"https://dillinger.io"} target="_blank">
               <Image
                 src={dillinger}

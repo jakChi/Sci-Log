@@ -36,7 +36,7 @@ export function SearchBar() {
         <input
           type="text"
           placeholder={t("searchPlaceholder")}
-          className={`w-full px-4 p-1 border rounded-3xl outline-none focus:ring-1 focus-ring-gray-100 transition-colors`}
+          className={`w-full px-4 p-1 border-2 rounded-3xl outline-none transition-colors`}
           name="search"
           autoComplete="off"
           autoFocus
@@ -50,16 +50,20 @@ export function SearchBar() {
         </button>
       </div>
       {query && (
-        <div className="absolute top-10 z-10 w-full mt-2 p-2 rounded-b-3xl bg-neutral-200/90 dark:bg-neutral-900/90 shadow-lg">
+        <div className="absolute border-2  top-10 z-9 w-full mt-2 p-2 rounded-3xl bg-neutral-100 dark:bg-neutral-900 shadow-lg">
           <ul className="max-h-96 overflow-y-auto">
             {results.map((post) => (
               <li
                 key={post.slug}
-                className="px-4 py-2 my-2 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-3xl cursor-pointer"
+                className="md:px-4 py-2 my-2 bg-neutral-200 hover:bg-neutral-50 dark:bg-neutral-800 dark:hover:bg-neutral-700 rounded-3xl cursor-pointer"
               >
                 <Link href={`/posts/${post.slug}`}>
-                  <h3 className="text-lg font-semibold">{post.title}</h3>
-                  <p className="text-sm text-neutral-500">{post.excerpt}</p>
+                  <h3 className="text-sm md:text-lg my-1 font-semibold">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs md:text-sm text-neutral-500">
+                    {post.excerpt}
+                  </p>
                 </Link>
               </li>
             ))}

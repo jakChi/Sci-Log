@@ -5,7 +5,7 @@ import { LanguageSwitcher } from "./language-switcher";
 
 export function SidePill() {
   return (
-    <div className="flex flex-col items-center fixed top-0 left-0 p-2 space-y-3 border-b border-r border-neutral-950 dark:border-neutral-100 rounded-br-xl shadow-lg">
+    <div className="flex flex-col items-center fixed top-0 right-0 md:right-2 p-1 md:p-2 space-y-4 border-l border-b rounded-bl-2xl">
       <ThemeSwitcher />
       <LanguageSwitcher />
       <Link

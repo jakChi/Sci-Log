@@ -8,7 +8,7 @@ export function SidePanel() {
 
   const t = useTranslations("HomePage.SidePanel");
   return (
-    <aside className="w-1/3 p-4 border-l">
+    <aside className="hidden md:block w-1/3 p-4 border-l">
       <h2 className="text-xl font-bold mb-4">{t("featuredPosts")}:</h2>
       <ul>
         {featuredPosts.map((post) => (

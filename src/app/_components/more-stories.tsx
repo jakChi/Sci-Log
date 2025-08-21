@@ -10,11 +10,11 @@ type Props = {
 export function MoreStories({ posts }: Props) {
   const t = useTranslations("HomePage.MoreStories");
   return (
-    <section id="more-stories" className="my-24 flex flex-col">
-      <h2 className="mb-8 text-5xl md:text-6xl font-bold leading-tight text-center">
+    <section id="more-stories" className="md:my-24 my-10 mb-20 flex flex-col">
+      <h2 className="mb-8 text-3xl md:text-6xl font-bold leading-tight">
         {t("title")}
       </h2>
-      <div className="grid grid-cols-1 gap-y-10 my-10 w-[90%] m-auto">
+      <div className="grid grid-cols-1 gap-y-10 my-5 md:w-[90%] m-auto">
         {posts.map((post) => (
           <PostPreview
             key={post.slug}
@@ -29,7 +29,7 @@ export function MoreStories({ posts }: Props) {
       </div>
       <Link
         href="/posts"
-        className="m-auto p-5 w-1/4 border text-lg font-bold text-center rounded-sm cursor-pointer hover:bg-gray-200 hover:text-gray-950 transition-colors"
+        className="m-auto my-10 p-5 md:w-1/4 border text-sm md:text-lg font-bold text-center rounded-sm cursor-pointer hover:bg-[var(--color-foreground)] hover:text-[var(--color-background)] transition-colors"
         aria-label={t("button")}
       >
         {t("button")}

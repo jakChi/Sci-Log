@@ -9,7 +9,7 @@ export function Intro() {
   return (
     <section
       id="intro"
-      className="rounded-2xl flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 p-2 md:mb-12"
+      className=" flex-col md:flex-row flex items-center md:justify-between mt-10 md:mt-16 mb-10 p-2 md:mb-12"
     >
       <div id="logo-text" className="flex-col">
         <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
@@ -18,13 +18,18 @@ export function Intro() {
         <h4 className="text-lg mt-5 mb-5">{t("description")}</h4>
       </div>
       <div id="categories">
-        <div className="text-lg text-center md:text-left">
+        <div className="text-sm md:text-lg text-center md:text-left">
           <ul
             id="categories-list"
-            className="flex items-center justify-around md:justify-start flex-wrap"
+            className="flex gap-1 items-center md:justify-start"
           >
             {categories.map((category) => (
-              <li key={category.name} className="mr-4 mb-2">
+              <li
+                key={category.id}
+                className={`md:mr-4 md:mb-2 ${
+                  category.id === 4 ? "col-span-2" : null
+                }`}
+              >
                 <Category
                   name={category.name}
                   color={category.color}

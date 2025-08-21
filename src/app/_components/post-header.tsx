@@ -21,7 +21,7 @@ export function PostHeader({ title, coverImage, date, author }: Props) {
           <Avatar name={author.name} picture={author.picture} />
           <AuthorName name={author.name} size="lg" />
         </div>
-        <span className="mx-2 text-neutral-700 dark:text-neutral-400">on</span>
+        <span className="mx-2 text-neutral-500 dark:text-neutral-400">on</span>
         <div className="text-lg text-neutral-500 dark:text-neutral-400">
           <DateFormatter dateString={date} />
         </div>

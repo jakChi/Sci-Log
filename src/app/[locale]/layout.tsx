@@ -1,6 +1,5 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-// import { getMessages, setRequestLocale } from "next-intl/server";
 import "../globals.css";
 import Footer from "../_components/footer";
 import { routing } from "@/src/i18n/routing";
@@ -18,12 +17,6 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  // // Ensure Next.js renders with the right locale
-  // setRequestLocale(locale);
-
-  // // Load messages for this locale
-  // const messages = await getMessages();
 
   return (
     <html lang={locale}>

@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug } from "@/src/lib/api";
-import { CMS_NAME } from "@/src/lib/constants";
 import markdownToHtml from "@/src/lib/markdownToHtml";
 import Container from "@/src/app/_components/container";
 import Header from "@/src/app/_components/header";
@@ -52,7 +51,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
     return notFound();
   }
 
-  const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+  const title = `${post.title}`;
 
   return {
     title,
