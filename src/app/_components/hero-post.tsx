@@ -36,22 +36,23 @@ export function HeroPost({
         <div className="flex flex-col absolute bottom-0 left-0 right-0 bg-[var(--color-background)] text-[var(--color-foreground)] opacity-80 p-2 md:p-4">
           <h3
             id="hero-post-title"
-            className="md:mb-4 text-sm md:text-4xl font-semibold leading-tight"
+            className="md:mb-2 text-sm md:text-4xl font-semibold leading-tight"
           >
             <Link href={`/posts/${slug}`} className="hover:underline">
               {title}
             </Link>
           </h3>
-          <div>
-            <div id="hero-post-date" className="md:mb-4 text-[10px] md:text-lg">
-              <DateFormatter dateString={date} />
-            </div>
+
+          <div id="hero-post-date" className="md:mb-2 text-[10px] md:text-lg">
+            <DateFormatter dateString={date} />
           </div>
-          <div id="hero-post-excerpt" className="md:mt-4">
-            <p className="text-[12px] md:text-lg leading-tight md:leading-relaxed">
-              {excerpt}
-            </p>
-          </div>
+
+          <p
+            id="hero-excerpt"
+            className="text-[12px] md:text-lg leading-tight md:leading-relaxed"
+          >
+            {excerpt}
+          </p>
         </div>
       </div>
     </section>

@@ -31,7 +31,7 @@ export function SearchBar() {
   const t = useTranslations("HomePage.Intro");
 
   return (
-    <div className="flex items-center justify-center w-full my-5 relative">
+    <div className="flex items-center justify-center w-full md:w-3/4 m-auto my-5 relative">
       <div className="relative w-full">
         <input
           type="text"

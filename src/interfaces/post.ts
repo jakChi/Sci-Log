@@ -11,16 +11,9 @@ export type Post = {
     url: string;
   };
   content: string;
-  preview?: boolean; // es ra aris
+  tags?: string[];
+  readingTime?: string;
+  isDraft?: boolean;
 };
 
-export type PostMeta = {
-  slug: string;
-  title: string;
-  date: string;
-  tags?: string[];
-}
 
-export interface Post extends PostMeta {
-  content: string;
-}

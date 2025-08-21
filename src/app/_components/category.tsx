@@ -10,11 +10,13 @@ type Props = {
 export function Category({ name, color, icon }: Props) {
   const t = useTranslations("HomePage.Intro.Categories");
   return (
-    <span
-      className={`inline-block ${color} text-neutral-900 text-[7px] md:text-base font-semibold px-3 py-1 rounded-full`}
-    >
-      <Link href={`/posts/${name}`} className={`hover:underline`}>
-        {t(name)} {icon}
+    <span className={``}>
+      <Link
+        href={`/posts/${name}`}
+        className={`inline-block ${color} text-neutral-900 text-[7px] md:text-base font-semibold p-2 md:px-3 rounded-full hover:underline`}
+      >
+        <span className="hidden md:inline-block">{t(name)}</span>
+        <span className="inline-block">{icon}</span>
       </Link>
     </span>
   );
