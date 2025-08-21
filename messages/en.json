@@ -12,7 +12,7 @@
   },
   "HomePage": {
     "Intro": {
-      "title": "Sci-Log",
+      "title": "Sci-Log.",
       "description": "A blog about science, technology, and the future.",
       "searchPlaceholder": "Search posts...",
       "Categories": {
@@ -27,6 +27,37 @@
       "featuredPosts": "Featured Posts",
       "featuredAuthors": "Featured Authors"
     },
-    "moreStories": "More Stories"
+    "MoreStories": {
+      "title": "More Stories",
+      "button": "View More Stories"
+    }
+  },
+  "Footer": {
+    "contribution": "If you're looking to contribute as a blogger, consider using these tools for writing Markdown files. Some are web-based, while others are desktop applications.",
+    "editors": {
+      "obsidian": "Obsidian",
+      "notion": "Notion",
+      "barelyhuman": "BarelyHuman",
+      "vscode": "Visual Studio Code",
+      "dillinger": "Dillinger",
+      "jekyllpad": "Jakyllpad"
+    },
+    "editorsDisclaimer": "Sci-Log is a personal project and is not affiliated with any of the mentioned editors or platforms.",
+    "editorsDisclaimer2": "Logos and brands are the property of their respective owners. Sci-Log is not affiliated with any of them.",
+    "builtWith": "This site is built with",
+    "nextjs": "Next.js",
+    "tailwindcss": "Tailwind CSS, and",
+    "vercel": "Vercel",
+    "openSource": "This site is open source. You can find the code on",
+    "github": "GitHub",
+    "contact": "If you have any questions or suggestions, feel free to reach out to us at",
+    "email": "email",
+    "copyright": "Sci-Log. All rights reserved.",
+    "madeBy": "Made with ❤️ by",
+    "author": "Jakchi",
+    "legal": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
+    }
   }
 }

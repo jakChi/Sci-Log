@@ -27,7 +27,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={"bg-slate-950 text-slate-300"}>
+      <body
+        className={
+          "bg-[var(--color-background)] text-[var(--color-foreground)]"
+        }
+      >
         <SidePill />
         <NextIntlClientProvider locale={locale}>
           {children}

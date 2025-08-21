@@ -21,10 +21,10 @@ export default async function Post(props: Params) {
 
   return (
     <main>
-      <Alert preview={post.preview} />
+      <Alert />
       <Container>
         <Header />
-        <article className="mb-32">
+        <article className="mb-32 ">
           <PostHeader
             title={post.title}
             coverImage={post.coverImage}

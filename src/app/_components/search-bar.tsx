@@ -50,16 +50,16 @@ export function SearchBar() {
         </button>
       </div>
       {query && (
-        <div className="absolute top-10 z-10 w-full mt-2 p-2 rounded-b-3xl bg-gray-900/90 shadow-lg">
+        <div className="absolute top-10 z-10 w-full mt-2 p-2 rounded-b-3xl bg-neutral-200/90 dark:bg-neutral-900/90 shadow-lg">
           <ul className="max-h-96 overflow-y-auto">
             {results.map((post) => (
               <li
                 key={post.slug}
-                className="px-4 py-2 my-2 hover:bg-gray-800 rounded-3xl cursor-pointer"
+                className="px-4 py-2 my-2 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-3xl cursor-pointer"
               >
                 <Link href={`/posts/${post.slug}`}>
                   <h3 className="text-lg font-semibold">{post.title}</h3>
-                  <p className="text-sm text-gray-600">{post.excerpt}</p>
+                  <p className="text-sm text-neutral-500">{post.excerpt}</p>
                 </Link>
               </li>
             ))}

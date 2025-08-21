@@ -16,7 +16,7 @@ export function MiniPostPreview({
   return (
     <div
       id="mini-post-preview"
-      className="flex items-center w-full px-2 rounded-2xl hover:bg-gray-800 transition-colors duration-200"
+      className="flex items-center w-full px-2 rounded-2xl hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-colors duration-200"
     >
       <div className="w-1/3">
         <CoverImage title={title} src={coverImage} slug={slug} />

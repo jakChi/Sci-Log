@@ -5,13 +5,13 @@ import { LanguageSwitcher } from "./language-switcher";
 
 export function SidePill() {
   return (
-    <div className="flex flex-col items-center fixed top-0 right-0 p-2 space-y-3 border-b border-l border-emerald-500 rounded-bl-xl shadow-lg">
+    <div className="flex flex-col items-center fixed top-0 left-0 p-2 space-y-3 border-b border-r border-neutral-950 dark:border-neutral-100 rounded-br-xl shadow-lg">
       <ThemeSwitcher />
       <LanguageSwitcher />
       <Link
         href="https://github.com/jakChi/Sci-Log"
         target="_blank"
-        className="text-gray-500 hover:text-gray-300"
+        className="text-neutral-900 dark:text-neutral-400 hover:text-neutral-500 dark:hover:text-neutral-100 text-2xl "
       >
         <FaGithub />
       </Link>

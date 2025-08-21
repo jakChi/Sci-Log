@@ -3,6 +3,7 @@ import Link from "next/link";
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
+import { AuthorName } from "./author-name";
 
 type Props = {
   title: string;
@@ -31,7 +32,11 @@ export function PostPreview({
         </h3>
         <div className="w-[95%] flex items-center mt-4">
           <Avatar name={author.name} picture={author.picture} />
-          <div className="text-md text-gray-500 mx-10">
+          <AuthorName name={author.name} size="lg" />
+          <span className="mx-2 text-neutral-500 dark:text-neutral-400">
+            on
+          </span>
+          <div className="text-md text-neutral-500 dark:text-neutral-400">
             <DateFormatter dateString={date} />
           </div>
         </div>

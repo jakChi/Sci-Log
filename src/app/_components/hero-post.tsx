@@ -1,3 +1,4 @@
+import { AuthorName } from "./author-name";
 import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
@@ -24,11 +25,12 @@ export function HeroPost({
   return (
     <section id="hero-post" className="w-2/3 mx-5 rounded-3xl">
       <div id="cover-image" className="relative">
-        <div className="absolute top-0 left-0 right-0 p-4">
+        <div className="absolute top-0 left-0 right-0 p-4 flex items-center">
           <Avatar name={author.name} picture={author.picture} />
+          <AuthorName name={author.name} size="lg" />
         </div>
         <CoverImage title={title} src={coverImage} slug={slug} />
-        <div className="flex flex-col absolute bottom-0 left-0 right-0 bg-black opacity-90 p-4 rounded-b-3xl">
+        <div className="flex flex-col absolute bottom-0 left-0 right-0 bg-[var(--color-background)] text-[var(--color-foreground)] opacity-90 p-4">
           <h3
             id="hero-post-title"
             className="mb-4 text-xl lg:text-3xl leading-tight"

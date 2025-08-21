@@ -13,15 +13,19 @@ export function LanguageSwitcher() {
   return (
     <div
       aria-label="Language switcher"
-      className="flex flex-col bg-gray-700 rounded-lg "
+      className="flex flex-col border rounded-3xl overflow-hidden"
     >
       {routing.locales.map((l) => (
         <Link
-          key={l}
+          key={routing.locales.indexOf(l) + 1}
           href={`/${l}${strip(pathname)}`}
-          className="text-xl bg:transparent hover:bg-gray-500 rounded-lg p-1 py-0"
+          className={`text-sm font-semibold bg:transparent hover:bg-neutral-200 hover:text-neutral-800  p-1 ${
+            pathname.startsWith(`/${l}`)
+              ? "bg-neutral-200 text-neutral-800"
+              : null
+          }`}
         >
-          {l === "ka" ? "🇬🇪" : "🇬🇧"}
+          {l}
         </Link>
       ))}
     </div>

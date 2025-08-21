@@ -12,7 +12,7 @@
   },
   "HomePage": {
     "Intro": {
-      "title": "Sci-Log",
+      "title": "Sci-Log.",
       "description": "მეცნიერების, ტექნოლოგიებისა და მომავლის ბლოგი.",
       "searchPlaceholder": "ბლოგების ძებნა...",
       "Categories": {
@@ -27,6 +27,37 @@
       "featuredPosts": "გამორჩეული ბლოგები",
       "featuredAuthors": "გამორჩეული ავტორები"
     },
-    "moreStories": "მეტი ისტორიები"
+    "MoreStories": {
+      "title": "მეტი ისტორიები",
+      "button": "იხილეთ მეტი ისტორიები"
+    }
+  },
+  "Footer": {
+    "contribution": "თუ გსურთ ბლოგერად წვლილის შეტანა, გაითვალისწინეთ, რომ Markdown ფაილების ჩასაწერად შეგიძლიათ გამოიყენოთ ეს ხელსაწყოები. ზოგიერთი მათგანი ვებსაიტზეა, ზოგი კი დესკტოპ აპლიკაციებია.",
+    "editors": {
+      "obsidian": "Obsidian",
+      "notion": "Notion",
+      "barelyhuman": "BarelyHuman",
+      "vscode": "Visual Studio Code",
+      "dillinger": "Dillinger",
+      "jekyllpad": "Jekyllpad"
+    },
+    "editorsDisclaimer": "Sci-Log არის პირადი პროექტი და არ არის დაკავშირებული რომელიმე აღნიშნულ რედაქტორსა და პლატფორმასთან.",
+    "editorsDisclaimer2": "ლოგოები და ბრენდები მათი შესაბამისი მფლობელების საკუთრებაა. Sci-Log არ არის დაკავშირებული არცერთ მათგანთან.",
+    "builtWith": "ეს საიტი შექმნილია",
+    "nextjs": "Next.js",
+    "tailwindcss": "Tailwind CSS-სა და",
+    "vercel": "Vercel-ის გამოყენებით",
+    "openSource": "ეს საიტი ღია წყაროა. შეგიძლიათ კოდი მოიძიოთ",
+    "github": "GitHub-ზე",
+    "contact": "თუ გაქვთ რაიმე შეკითხვა ან წინადადება, შეგიძლიათ მოგვწეროთ",
+    "email": "ელ. ფოსტაზე",
+    "copyright": "Sci-Log. ყველა უფლება დაცულია.",
+    "madeBy": "შექმნილია ❤️-ით",
+    "author": "Jakchi-ს მიერ",
+    "legal": {
+      "privacyPolicy": "კონფიდენციალურობის პოლიტიკა",
+      "termsOfService": "მომსახურების პირობები"
+    }
   }
 }
